@@ -1,0 +1,339 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    color: white;
+}
+
+
+body {
+
+    background-color: black;
+
+}
+
+#main {
+
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://assets.nflxext.com/ffe/siteui/vlv3/b4c7f092-0488-48b7-854d-ca055a84fb4f/5b22968d-b94f-44ec-bea3-45dcf457f29e/IN-en-20231204-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header.header {
+
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+.logo-cont svg {
+
+    height: 2.5rem;
+    fill: rgb(229, 9, 20);
+}
+
+select {
+
+    height: 2rem;
+    width: 8rem;
+    text-align: center;
+    border: 1px solid grey;
+    background-color: transparent;
+}
+
+.sign-in-cont {
+
+    width: 100%;
+    position: relative;
+
+}
+
+
+.sign-in-btn button {
+
+
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(229, 9, 20);
+}
+
+.sign-in-btn button:hover {
+
+    background-color: rgba(255, 0, 0, 0.747);
+}
+
+.sign-in-btn {
+
+    height: auto;
+}
+
+main {
+
+    margin: auto;
+}
+
+main h1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+main p {
+
+    font-size: 25px;
+}
+
+main h3 {
+
+    font-size: 20px;
+}
+
+.form-control {
+
+    background: transparent;
+    flex: 1;
+
+}
+
+.form-control:focus {
+    background: transparent;
+
+}
+
+.form-floating {
+
+    flex-basis: 375px;
+    height: auto;
+}
+
+.sign-up-btn {
+
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 0px 50px;
+    font-size: 20px;
+
+}
+
+.btn:hover {
+
+    background-color: rgba(255, 0, 0, 0.747);
+}
+
+
+
+.divider {
+
+    background-color: rgb(35, 35, 35);
+    height: 10px;
+}
+
+.content-sec {
+
+    padding: 70px 0;
+}
+
+.info-cont {
+
+    height: fit-content;
+}
+
+.info-cont h1 {
+
+    font-weight: 900;
+
+}
+
+.info-cont p {
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 30px;
+
+}
+
+.content-cont img {
+
+    height: 380px;
+
+}
+
+.content-cont>div {
+
+    position: relative;
+}
+
+#video-1{
+
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    z-index: -1;
+}
+
+#video-2{
+
+    position: absolute;
+    z-index: -1;
+    top: 30px;
+    left: 90px;
+}
+
+.download-box img {
+
+    height: 80px;
+}
+
+.download-box-cont{
+
+    position: relative;
+}
+
+.download-box {
+    position: absolute;
+    background-color: black;
+    z-index: 2;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    overflow: hidden;
+    border-radius: 0.7rem;
+    width: fit-content;
+    top: 250px;
+    left: 130px;
+}
+
+
+
+.qna-heading h1{
+
+    font-weight: 900;
+    font-size: 50px;
+}
+
+
+.accordion-item{
+
+    background-color: rgb(45, 45, 45);
+    border: none;
+}
+
+.accordion-button{
+
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-size: 25px;
+    
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    
+}
+
+.accordion-button::after{
+
+    color: white;
+}
+
+.accordion-button:focus{
+    
+    box-shadow: none;
+   
+}
+
+.footer-list li{
+
+    width: fit-content;
+}
+
+@media (max-width:1280px) {
+
+    header.header {
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+}
+
+@media (max-width:960px) {
+
+    .logo-cont svg {
+
+        height: 1.5rem;
+    }
+
+    #main {
+
+        height: 80vh;
+
+
+    }
+
+    main h1 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    main p {
+
+        font-size: 18px;
+    }
+
+    main h3 {
+
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    #main {
+
+        height: 75vh;
+
+    }
+
+    .form-floating {
+
+        flex-basis: 10px;
+
+    }
+
+    .sign-up-cont {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sign-up-btn {
+
+        padding: 10px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .sign-in-cont select {
+
+        height: 2rem;
+        width: 5rem;
+    }
+
+    .sign-in-btn button {
+
+        padding: 5px;
+    }
+}
+
